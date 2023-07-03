@@ -1,0 +1,438 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+
+.logo {  
+  text-align: left;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+
+div.logo {
+  max-width:480px;
+  height:200px;
+  display: flex;;
+}
+
+.logo img {
+  height:200px;
+  width:480px;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #100b1f;
+  background-size: cover;
+  justify-content: space-between;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding:0;
+}
+
+.navItems {
+  display: flex;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding:20px 20px 20px 20px;
+  flex-shrink: 1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.navItems:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #100b1f;
+  box-shadow: 0px 0px 3px 3px #100b1f inset;
+}
+
+/*Hero*/
+
+.heroImg {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #100b1f;
+  min-width: 400px;
+}
+
+.photo {
+  border: solid #100b1f;
+  /*border-width: 144px 35px 146px 36px;*/
+  scale: 1.2;
+  margin-top: 100px;
+}
+
+.photo img {
+  display: block;
+}
+
+
+
+.about {
+  font-size: 3vmax;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+  width: 80%;
+  background-color: #100b1f;
+  padding: 23px 20px 25px 20px;
+
+}
+
+
+/*Skills*/
+
+
+
+.containerSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerSkills, .headerWork {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 4vmax;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subSkills {
+  display: Flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 1.2vw;
+  flex-flow: row wrap;
+}
+
+.mainText {
+  width: 30vw;
+  min-width: 40vw;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 20px;
+  font-size: 2.5vmax;
+}
+
+
+@media screen and (max-width: 600px) {
+  .subSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainText {
+    width: 80vw;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+.skillsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: 0;
+  list-style-type: circle;
+  margin-left: 20px;
+  font-size: 2.5vmax;
+}
+
+
+
+.listSkills {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-left: 0px;
+}
+
+
+
+.thick {
+  font-weight: 900;
+  font-size: 3vmax;
+}
+
+
+
+/*Work*/
+
+
+.containerWork {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  resize: none;
+  flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 801px) {
+  .containerListWork {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"
+    "g g";
+    justify-content: center;
+    resize: none;
+    align-items: center;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containerListWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+  }
+
+  .workItem {
+    text-align: center;
+  }
+
+  .caseStudy {
+    margin-bottom: 50px;
+  }
+
+  .workImg {
+    margin-top: 100px;
+  }
+}
+
+.caseStudy {
+  border: solid 4px #100b1f;
+  background-color: #100b1f;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3vmax;
+  padding: 10px;
+}
+
+.caseStudy:hover {
+  background-color: white;
+  border: solid 4px #100b1f;
+  color: #100b1f;
+}
+
+
+.workItem {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 3vmax;
+  resize: none;
+
+}
+
+.work1, .work2, .work3 {
+  align-items: center;
+}
+
+.work1Img {
+  grid-area: a;
+}
+work1 {
+  grid-area: b;
+}
+.work2Img {
+  grid-area: c;
+}
+.work2 {
+  grid-area: d;
+}
+.work3Img {
+  grid-area: e;
+}
+.work3 {
+  grid-area: f;
+}
+
+
+
+
+.viewAll {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 5vmax;
+  padding: 15px 25px;
+  background-color: #100b1f;
+  border: solid 4px #100b1f;
+  color: white;
+  min-width: 50vw;
+  grid-area: g;
+}
+
+.viewAll:hover {
+  background-color: white;
+  border: solid 4px #100b1f;
+  color: #100b1f;
+}
+
+.workImg img{
+  max-width: 350px;
+  max-height: 600px;
+}
+
+/*Contact*/
+
+.contactContainer {
+  margin: 50px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 200px 1fr;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d";
+    justify-content: center;
+    align-items: center;
+}
+
+.getIn {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 6vmax;
+  font-weight: 400;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.linkedIn {
+  grid-area: b;
+  cursor: pointer;
+  scale: 25%;
+  /*position: relative;
+  left: 80px;*/
+}
+
+.phone {
+  grid-area: c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5vmax;
+  /*position: relative;
+  right:80px;*/
+}
+
+.number, .email {
+  font-size: 2.5vmax;
+}
+
+.containerButton {
+  grid-area: d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactButton {
+  grid-area: d;
+  width: 50vw;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vmax;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color:white;
+  border: none;
+  box-shadow: 2px 2px rgb(87, 87, 87);
+  border: 2px solid black;
+}
+
+.contactButton:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
+
+/*Footer*/
+
+.footer {
+  background-color: #100b1f;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.one, .two, .three {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2vmax;
+  text-align: center;
+  font-weight: 100;
+  margin: 20px 50px;
+}
+
+
+.skills, .work, .contact {
+  margin-bottom: 100px;
+}
