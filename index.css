@@ -463,7 +463,7 @@ h4 {
   padding-bottom: 40px;
   position: absolute;
   left: 10vw;
-  bottom: -20vh;
+  bottom: -30vh;
 }
 
 .close {
@@ -512,7 +512,7 @@ input, .emailInput {
   color: black;
   font-size: 2vmax;
   border: solid 2px #100b1f;
-  height: 100px;
+  height: 15vh;
 }
 
 .submit {
