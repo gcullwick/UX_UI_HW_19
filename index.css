@@ -484,7 +484,12 @@ h4 {
   cursor: pointer;
 }
 
-
+label {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
 
 input, .emailInput {
   color: black;
