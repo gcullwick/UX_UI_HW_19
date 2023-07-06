@@ -488,13 +488,13 @@ label {
   color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 1.2vw;
+  font-size: 2vmax;
 }
 
 input, .emailInput {
   color: black;
   background-color: #FEFEFE;
-  font-size: 1vw;
+  font-size: 2vmax;
   font-family: 'Lato', sans-serif;
   border: solid 2px #100b1f;
 }
@@ -502,14 +502,14 @@ input, .emailInput {
 .formText {
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 1.2vw;
+  font-size: 2vmax;
 }
 
 
 .message {
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 1vw;
+  font-size: 2vmax;
   border: solid 2px #100b1f;
   height: 100px;
 }
