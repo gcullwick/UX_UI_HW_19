@@ -386,6 +386,7 @@ h4 {
 
 .number, .email {
   font-size: 2.5vmax;
+  color: black;
 }
 
 .containerButton {
