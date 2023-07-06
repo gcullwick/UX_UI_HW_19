@@ -461,8 +461,9 @@ h4 {
   border: solid 1px #100b1f;
   width: 60%;
   padding-bottom: 40px;
-  position: relative;
-  bottom: 20vh;
+  position: absolute;
+  left: 20vw;
+  bottom: -20vh;
 }
 
 .close {
