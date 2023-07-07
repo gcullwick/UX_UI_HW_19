@@ -22,16 +22,6 @@ $(".submit").on("click", function () {
   console.log("d");
 })
 
-
-
-/*
-$(".modal").on("open", function(){
-  $(".modal").slideRight(600)
-})
-*/
-
-
-
 function animate() {
   $('#myBtn').animate({
     opacity:0.9

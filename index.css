@@ -4,7 +4,7 @@ font-family: 'Lato', sans-serif;
 */
 
 body {
-  max-width: 1200px;
+  max-width: 20000px;
   margin: auto;
 }
 
@@ -80,13 +80,14 @@ div.logo {
 
 .heroImg {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 40px 40px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #100b1f;
   min-width: 400px;
+  padding-bottom: 50px;
 }
 
 .photo {
@@ -94,6 +95,7 @@ div.logo {
   /*border-width: 144px 35px 146px 36px;*/
   scale: 1.2;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .photo img {
@@ -108,7 +110,7 @@ div.logo {
   font-weight: 100;
   color: white;
   width: 80%;
-  background-color: #100b1f;
+  /*background-color: #100b1f;*/
   padding: 23px 20px 25px 20px;
 
 }
@@ -116,7 +118,9 @@ div.logo {
 
 /*Skills*/
 
-
+.skills {
+  margin-top: 300px;
+}
 
 .containerSkills {
   display: flex;
@@ -130,7 +134,7 @@ div.logo {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 4vmax;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
   color: black;
 }
