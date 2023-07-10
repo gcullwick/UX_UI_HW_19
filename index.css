@@ -105,7 +105,7 @@ div.logo {
 
 
 .about {
-  font-size: 3vmax;
+  font-size: 1.8vmax;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: white;
@@ -133,8 +133,7 @@ div.logo {
 .headerSkills, .headerWork {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  font-size: 4vmax;
-  margin-bottom: 50px;
+  font-size: 2.5vmax;
   text-align: center;
   color: black;
 }
@@ -158,7 +157,7 @@ div.logo {
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 20px;
-  font-size: 2.5vmax;
+  font-size: 1.8vmax;
 }
 
 
@@ -191,7 +190,7 @@ div.logo {
   margin-top: 0;
   list-style-type: circle;
   margin-left: 20px;
-  font-size: 2.5vmax;
+  font-size: 1.8vmax;
 }
 
 
@@ -206,7 +205,7 @@ div.logo {
 
 .thick {
   font-weight: 900;
-  font-size: 3vmax;
+  font-size: 2vmax;
 }
 
 
@@ -228,8 +227,8 @@ div.logo {
 @media screen and (min-width: 801px) {
   .containerListWork {
     display: grid;
-    grid-template-columns: 4fr 6fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr;
     grid-template-areas: 
     "a b"
     "c d"
@@ -274,7 +273,7 @@ div.logo {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 3vmax;
+  font-size: 2vmax;
   padding: 10px;
 }
 
@@ -288,7 +287,7 @@ div.logo {
 .workItem {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 3vmax;
+  font-size: 1.8vmax;
   resize: none;
 
 }
@@ -317,7 +316,7 @@ work1 {
 }
 
 .workItem h4 {
-  font-size: 4vw;
+  font-size: 2.5vw;
   font-weight: 700;
   color: black;
 }
@@ -326,14 +325,18 @@ work1 {
   color: black;
 }
 
+.workImg {
+  display: flex;
+  justify-content: center;
+}
+
 
 .viewAll {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 5vmax;
+  font-size: 3vmax;
   padding: 15px 25px;
   background-color: #100b1f;
   border: solid 4px #100b1f;
@@ -349,15 +352,15 @@ work1 {
 }
 
 .workImg img{
-  max-width: 350px;
-  max-height: 600px;
+  max-width: 60vmax;
+  margin: auto 0;
 }
 
 /*Contact*/
 
 .contactContainer {
   margin: 50px;
-  margin-top: 150px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 200px 1fr;
@@ -370,37 +373,54 @@ work1 {
 }
 
 .getIn {
-  grid-area: a;
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 6vmax;
+  font-size: 4vmax;
   font-weight: 400;
   justify-content: center;
   margin-bottom: 0px;
   color: black;
 }
 
-.linkedIn {
+.getInCont {
+  grid-area: a;
+}
+
+.linkedInCont {
   grid-area: b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linkedIn {
   cursor: pointer;
-  scale: 25%;
-  /*position: relative;
-  left: 80px;*/
+  /*left: 80px;*/
+  padding-right: 50px;
+}
+
+.linkedLogo {
+  max-width: 128px;
+  max-height: 128px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .phone {
   grid-area: c;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-align: center;
-  font-size: 1.5vmax;
+  text-align: left;
+  font-size: 2vmax;
+  padding-left: 50px;
   /*position: relative;
   right:80px;*/
 }
 
 .number, .email {
-  font-size: 2.5vmax;
+  font-size: 2vmax;
   color: black;
 }
 
@@ -459,8 +479,6 @@ work1 {
 
 /* Contact Form */
 .modal {
-  /*display: none;*/
-  position: fixed;
   z-index: 1;
   width:100%;
   height: 100%;
@@ -476,9 +494,9 @@ work1 {
   border: solid 1px #100b1f;
   width: 80%;
   padding-bottom: 40px;
-  position: absolute;
-  left: 10vw;
-  bottom: -30vh;
+  position: relative;
+  left: 0%;
+  top: -25%;
    box-shadow: 0px -5px 51px #100b1f;
 }
 

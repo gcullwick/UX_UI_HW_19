@@ -25,12 +25,12 @@ $(".submit").on("click", function () {
 function animate() {
   $('#myBtn').animate({
     opacity:0.9
-  },{duration:1000,
+  },{duration:2000,
     done:function(){
     console.log("1");
     $('#myBtn').animate({
       opacity:1.0
-  },{duration:1000,
+  },{duration:2000,
     done:animate()
       });
     }});
