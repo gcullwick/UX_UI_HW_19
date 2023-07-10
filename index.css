@@ -236,7 +236,7 @@ div.logo {
   .containerListWork {
     display: grid;
     grid-template-columns: 5fr 5fr;
-    grid-template-rows: 2fr 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
     grid-template-areas: 
     "a b"
     "c d"
